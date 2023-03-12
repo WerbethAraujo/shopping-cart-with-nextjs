@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Product from '../components/Product';
+
+import data from '../data.json';
 
 export default function Home() {
   return (
@@ -11,6 +14,15 @@ export default function Home() {
       </Head>
 
       <Navbar />
+
+      <section className='container mx-auto'>
+        <h1 className='text-4xl mt-4 text-center'>Nossos Produtos</h1>
+        <div className='mt-4 grid grid-cols-1 md:grid-cols-3 gap-4'>
+          {data.map((product) => (
+            <Product key={product.id} product={product} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }

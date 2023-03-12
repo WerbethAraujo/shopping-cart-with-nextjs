@@ -7,8 +7,8 @@ function Navbar() {
   return (
     <section className='shadow-xl bg-white sticky top-0'>
       <div className='container mx-auto py-2 text-[24px] flex justify-between items-center'>
-        <div className='cursor-pointer font-bold text-purple-600'>
-          <Link href='/'>Logo</Link>
+        <div className='cursor-pointer font-bold'>
+          <Link href='/'>Shopping Cart</Link>
         </div>
 
         <div className='relative cursor-pointer'>
