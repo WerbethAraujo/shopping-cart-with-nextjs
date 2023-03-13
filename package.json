@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "next": "^13.2.4",
-    "react-icons": "^4.8.0"
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.8.0",
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
